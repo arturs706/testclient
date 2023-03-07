@@ -92,7 +92,11 @@ export default function Home() {
             <div><h1>S23 Series</h1></div>
           </div>
         </div>
+        <div className={styles.ovalblur}></div>
+
         <div className={styles.divtwo}>
+
+
         <div className={styles.swiperDiv}>
         <Swiper
           className={styles.myswiperr}
@@ -130,7 +134,7 @@ export default function Home() {
         <div className={styles.divwrapper}>          
         <div>
           <div className={styles.number}><h1>{itemKey}</h1><h5>\ {String(swiperData.length.toString()).padStart(2, '0')}</h5></div>
-          <span>{swiperData[textId].description}</span>
+          <span className={styles.descriptionphone}>{swiperData[textId].description}</span>
         </div>
         <div className={styles.swipebuttons}>
           <div className="previousButton" onClick={() => swiperRef.current.swiper.slidePrev()}>

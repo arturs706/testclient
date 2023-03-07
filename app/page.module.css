@@ -16,8 +16,9 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-color: #000235;
 }
+
+
 .divone {
  width: 100%;
  max-width: 1440px;
@@ -25,6 +26,8 @@
  display: flex;
  justify-content: center;
  align-items: center;
+ background-color: #000235; 
+
 }
 
 .maindivh1 {
@@ -43,6 +46,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #000235; 
+
+}
+.ovalblur {
+  position: absolute;
+  right: -1000;
+  width: 1200px;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(102, 246, 255) 20%, rgba(102, 246, 255,0.2) 20%, rgba(102, 246, 255,0) 100%);
+  filter: blur(100px);
+  z-index: 1;
 }
 
 .divthree {
@@ -52,6 +66,8 @@
   height:20%;
   justify-content: center;
   align-items: center;
+  background-color: #000235; 
+
 }
 .middlediv{
   display: none;
@@ -90,15 +106,9 @@
 }
 
 .swipebuttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-right: 2.2rem;
-  margin-top: 2.5rem;
-  position: relative;
-
+  display: none;
 }
+
 .arrowright {
   margin-top: 1rem;
   cursor: pointer;
@@ -126,8 +136,37 @@
 .maindivh1024 {
   display: none;
 }
+@media screen and (max-width: 1024px) {
+  .descriptionphone {
+    display: none;
+  }
+  .number {
+    display: flex;
+    font-size: 2.4rem;
+  }
+  .number h1 {
+    display: flex;
+    font-size: 4.4rem;
+  }
+  .divwrapper {
+    display: flex;
+    color: white;
+    padding-left: 0rem;
+    text-align: left;
+    flex-direction: row;
+  }
+}
 
 @media screen and (min-width: 1024px) {
+  .swipebuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2.2rem;
+    margin-top: 2.5rem;
+    position: relative;
+  }
   .swiperDiv {
     width: 100%;
     height: 90vh;
@@ -137,7 +176,7 @@
     justify-content: center;
   }
   .myswiperr {
-    width: 20.5rem
+    width: 20.5rem;
   }
   .main {
     display: flex;
