@@ -115,7 +115,7 @@
   @media screen and (max-width: 414px) {
 
     .burger {
-        margin-left: 0;
+        margin-left: 0rem;
     }
     .nav {
         height: 8vh;
@@ -147,7 +147,7 @@
 
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 390px) {
     .logo:nth-child(2) {
         font-size: 0.5rem;
         display: flex;
