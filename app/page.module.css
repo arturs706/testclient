@@ -19,7 +19,6 @@
   background-color: #000235;
 }
 .divone {
- background-color: aquamarine;
  width: 100%;
  max-width: 1440px;
  height: 20%;
@@ -27,6 +26,16 @@
  justify-content: center;
  align-items: center;
 }
+
+.maindivh1 {
+  line-height: 2;
+  text-align: center;
+}
+
+.maindivh1 h3{
+  color: #ffffff65;
+}
+
 .divtwo {
   background-color: red;
   width: 100%;
@@ -46,6 +55,9 @@
   justify-content: center;
   align-items: center;
 }
+.middlediv{
+  display: none;
+}
 
 
 /* ======== */
@@ -62,4 +74,82 @@
   height: 100vh;
   width: 100%;
   background-color: #6d6e86;
+}
+.maindivh1024 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    background-color: #a8a9cf;
+    max-width: 1440px;
+
+  }
+  .divone {
+    justify-content: flex-start;
+    width: 33%;
+    height: 90vh;
+  }
+  .divtwo {
+    width: 34%;
+    height: 90vh;
+
+  }
+  .divthree {
+    width: 33%;
+    height: 90vh;
+  }
+  .middlediv {
+    display: flex;
+    color: #000235;
+    height: 10vh;
+  }
+  .maindivh1 {
+    display: none;
+  }
+  .maindivh1024 {
+    display: inline;
+  }
+  .maindivh1024 h1 {
+    font-size: 4.5rem;
+    padding-left: 3rem;
+  }
+  .maindivh1024 span {
+    padding-left: 3.2rem;
+    color: #ffffff65;
+  }
+
+}
+
+@media screen and (max-width: 1250px) {
+  .maindivh1024 h1 {
+    font-size: 4rem;
+    padding-left: 3rem;
+  }
+  .maindivh1024 span {
+    padding-left: 3.2rem;
+    color: #ffffff65;
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  .maindivh1024 h1 {
+    font-size: 3.5rem;
+    padding-left: 3rem;
+  }
+  .maindivh1024 span {
+    padding-left: 3.2rem;
+    color: #ffffff65;
+  }
 }

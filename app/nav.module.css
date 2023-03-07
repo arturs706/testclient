@@ -73,7 +73,11 @@
     cursor: pointer;
 }
 
-
+@media screen and (max-width: 1024) {
+    .nav {
+        margin-bottom: 1rem;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .trustpilottext {
