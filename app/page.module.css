@@ -9,12 +9,57 @@
   color: white;
 }
 
-.maindiv{
+.sectionone{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-color: #000235;
+}
+.divone {
+ background-color: aquamarine;
+ width: 100%;
+ max-width: 1440px;
+ height: 20%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.divtwo {
+  background-color: red;
+  width: 100%;
+  max-width: 1440px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divthree {
+  display: flex;
+  background-color: yellow;
+  width: 100%;
+  max-width: 1440px;
+  height:20%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ======== */
+.middlediv {
+  display: none;
+}
+/* ======== */
+
+.sectiontwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #6d6e86;
 }
