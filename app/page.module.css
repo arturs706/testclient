@@ -7,6 +7,7 @@
   width: 100%;
   background-color: #000235;
   color: white;
+
 }
 
 .sectionone{
@@ -16,6 +17,8 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+
+
 }
 
 
@@ -33,10 +36,12 @@
 .maindivh1 {
   line-height: 2;
   text-align: center;
+
 }
 
 .maindivh1 h3{
   color: #ffffff65;
+  
 }
 
 .divtwo {
@@ -51,9 +56,8 @@
 }
 .ovalblur {
   position: absolute;
-  right: -1000;
-  width: 1200px;
-  height: 500px;
+  width: 100%;
+  height: 90vh;
   background: radial-gradient(ellipse at center, rgba(102, 246, 255) 20%, rgba(102, 246, 255,0.2) 20%, rgba(102, 246, 255,0) 100%);
   filter: blur(100px);
   z-index: 1;
@@ -66,8 +70,7 @@
   height:20%;
   justify-content: center;
   align-items: center;
-  background-color: #000235; 
-
+  background-color: #000235;
 }
 .middlediv{
   display: none;
@@ -112,10 +115,14 @@
 .arrowright {
   margin-top: 1rem;
   cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
 
 .arrowleft {
   cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
 
 
@@ -136,6 +143,20 @@
 .maindivh1024 {
   display: none;
 }
+.arrowleftsmall {
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+.arrowrightsmall {
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+
+}
+
+
+
 @media screen and (max-width: 1024px) {
   .descriptionphone {
     display: none;
@@ -155,9 +176,21 @@
     text-align: left;
     flex-direction: row;
   }
+  .swiperDiv {
+    display: flex;
+    cursor: pointer;
+    margin-top: 1rem;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .arrowleftsmall {
+    display: none;
+  }
+  .arrowrightsmall {
+    display: none;
+  }
   .swipebuttons {
     display: flex;
     flex-direction: column;
@@ -167,6 +200,7 @@
     margin-top: 2.5rem;
     position: relative;
   }
+
   .swiperDiv {
     width: 100%;
     height: 90vh;
@@ -175,6 +209,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .myswiperr {
     width: 20.5rem;
   }

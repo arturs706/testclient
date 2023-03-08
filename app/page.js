@@ -98,6 +98,16 @@ export default function Home() {
 
 
         <div className={styles.swiperDiv}>
+        <div className="previousButton" onClick={() => swiperRef.current.swiper.slidePrev()}>
+
+        <Image
+              className={styles.arrowleftsmall}
+              src="https://res.cloudinary.com/dttaprmbu/image/upload/v1677960910/arrowleft_bxtl9u.svg"
+              alt="prev-arrow"
+              width={50}
+              height={37}
+            />
+          </div>
         <Swiper
           className={styles.myswiperr}
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -127,7 +137,15 @@ export default function Home() {
           </SwiperSlide>
           ))}
           </Swiper>
- 
+          <div className="nextButton" onClick={() => swiperRef.current.swiper.slideNext()}>
+            <Image
+                className={styles.arrowrightsmall}
+                src="https://res.cloudinary.com/dttaprmbu/image/upload/v1677960910/arrowright_tpil92.svg"
+                alt="arrow-next"
+                width={50}
+                height={37}
+              />
+          </div>
         </div>
         </div>
         <div className={styles.divthree}>
