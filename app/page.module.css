@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200vh;
+  height: 300vh;
   width: 100%;
   background-color: #000235;
   color: white;
@@ -164,21 +164,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-
-
-
-/* ======== */
-
-
-.sectiontwo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  background-color: #000235;
-}
 .maindivh1024 {
   display: none;
 }
@@ -400,7 +385,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6a6edf; 
    
    }
    .divtwo {
@@ -410,7 +394,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #cdac5e; 
   }
   .divthree {
     display: flex;
@@ -420,7 +403,6 @@
     height:20%;
     justify-content: center;
     align-items: center;
-    background-color: #47bc83;
     
   }
   .main {
@@ -443,8 +425,70 @@
     width: 100%;
     overflow: hidden;
   }
-  
 }
 
 
 
+
+
+
+/* SECTION TWO */
+
+
+/* ======== */
+
+
+.sectiontwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #000235;
+}
+.sectiontwodiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectiontwodiv h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sectiontwodiv img {
+  cursor: pointer;
+}
+
+.ovalblurtwo {
+  background: radial-gradient(ellipse at left, rgba(153, 78, 188) 45%, rgba(153, 78, 188, 0.2) 45%, rgba(153, 78, 188, 0) 100%);
+  -webkit-background: radial-gradient(ellipse at left, rgba(153, 78, 188) 45%, rgba(153, 78, 188, 0.2) 45%, rgba(153, 78, 188, 0) 100%);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 3800;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* SECTION THREE */
+
+
+/* ======== */
+
+.sectionthree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #000235;
+}

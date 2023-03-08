@@ -15,6 +15,7 @@ export default function Home() {
   const [itemKey, setItemKey] = useState('01')
   const [textId, setTextId] = useState(0)
   const sectionRef = useRef(null);
+  const sectionThreeRef = useRef(null);
 
   const swiperData = [
     { 
@@ -75,6 +76,10 @@ export default function Home() {
     sectionRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
   };
 
+  const handleClickTwo = () => {
+    sectionThreeRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
 
 
 
@@ -125,7 +130,6 @@ export default function Home() {
           >
           {swiperData.map((item, index) => (
           <SwiperSlide key={index}>
-            {widthSize}
           <Image 
                src={item.imgSrc}
                alt="Picture of the author"
@@ -200,7 +204,40 @@ export default function Home() {
               <div>Instagram</div>
             </div>
       </div>
-      <section className={styles.sectiontwo} ref={sectionRef}></section>
+
+
+      {/* /* SECTION TWO */
+
+
+      /* ========  */}
+      <section className={styles.sectiontwo} ref={sectionRef}>
+        <div className={styles.sectiontwodiv}>
+          <h1>NEW ARRIVALS</h1>
+          <Image
+              src="https://res.cloudinary.com/dttaprmbu/image/upload/v1678030287/arrowdown_xtrut2.svg"
+              alt="arrow-down"
+              width={200}
+              height={148}
+              className="rotate-on-hover" // add a class to trigger the rotation on hover
+              onClick={handleClickTwo}
+          />
+        </div>
+        <div className={styles.ovalblurtwo}></div>
+      </section>
+
+
+
+
+      {/* /* SECTION THREE */
+
+
+      /* ========  */}
+
+      <section className={styles.sectionthree} ref={sectionThreeRef}>
+        <div className={styles.sectionthreediv}>
+          <h1>{widthSize}</h1>
+        </div>
+      </section>
     </main>
   )
 }
