@@ -7,7 +7,6 @@
   width: 100%;
   background-color: #000235;
   color: white;
-
 }
 
 .sectionone{
@@ -17,6 +16,7 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .divone {
@@ -49,19 +49,21 @@
   justify-content: center;
   align-items: center;
   background-color: #000235; 
-
 }
 .ovalblur {
   position: absolute;
   width: 100%;
   height: 90vh;
-  background: radial-gradient(ellipse at center, rgba(102, 246, 255) 20%, rgba(102, 246, 255,0.2) 20%, rgba(102, 246, 255,0) 100%);
+  background: radial-gradient(ellipse at center, rgba(102, 246, 255) 25%, rgba(102, 246, 255,0.2) 25%, rgba(102, 246, 255,0) 100%);
   filter: blur(100px);
+  -webkit-background: radial-gradient(ellipse at center, rgba(102, 246, 255) 25%, rgba(102, 246, 255,0.2) 25%, rgba(102, 246, 255,0) 100%);
+  -webkit-filter: blur(100px);
   z-index: 1;
 }
 
 .divthree {
   display: flex;
+  flex-direction: row;
   width: 100%;
   max-width: 1440px;
   height:20%;
@@ -155,6 +157,8 @@
   align-items: center;
   width: 33%;
 }
+
+
 .rotate-on-hover:hover {
   transform: rotate(360deg);
   transition: transform 0.5s ease-in-out;
@@ -192,24 +196,37 @@
 
 
 @media screen and (max-width: 1024px) {
+  .numberdescription {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
   .descriptionphone {
-    display: none;
+    display: flex;
+    width: 20rem;
   }
   .number {
     display: flex;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
+    width: 5rem;
+    
   }
   .number h1 {
     display: flex;
-    font-size: 4.4rem;
+    font-size: 2.4rem;
+
   }
   .divwrapper {
     display: flex;
     color: white;
     padding-left: 0rem;
     text-align: left;
-    flex-direction: row;
+    align-items: center;
+    width: 37rem;
   }
+
   .swiperDiv {
     display: flex;
     cursor: pointer;
@@ -351,6 +368,13 @@
     color: #ffffff65;
     font-size: 1.5rem;
   }
+  .ovalblur {
+    background: radial-gradient(ellipse at center, rgba(102, 246, 255) 45%, rgba(102, 246, 255,0.2) 45%, rgba(102, 246, 255,0) 100%);
+    filter: blur(100px);
+    -webkit-background: radial-gradient(ellipse at center, rgba(102, 246, 255) 45%, rgba(102, 246, 255,0.2) 45%, rgba(102, 246, 255,0) 100%);
+    -webkit-filter: blur(100px);
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 465px) {
@@ -366,6 +390,61 @@
   }
 }
 
+
+
+@media (pointer: coarse) and (min-width: 768px) and (max-height: 1024px) and (orientation: landscape) {
+  .divone {
+    width: 100%;
+    max-width: 1440px;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a6edf; 
+   
+   }
+   .divtwo {
+    width: 100%;
+    max-width: 1440px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdac5e; 
+  }
+  .divthree {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    height:20%;
+    justify-content: center;
+    align-items: center;
+    background-color: #47bc83;
+    
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300vh;
+    width: 100%;
+    background-color: #000235;
+    color: white;
+  }
+  
+  .sectionone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+}
 
 
 

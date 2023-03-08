@@ -150,7 +150,7 @@ export default function Home() {
         </div>
         <div className={styles.divthree}>
         <div className={styles.divwrapper}>          
-        <div>
+        <div className={styles.numberdescription}>
           <div className={styles.number}><h1>{itemKey}</h1><h5>\ {String(swiperData.length.toString()).padStart(2, '0')}</h5></div>
           <span className={styles.descriptionphone}>{swiperData[textId].description}</span>
         </div>
