@@ -7,7 +7,7 @@
     height: 200vh;
     background-color: #000;
     position: fixed;
-    z-index: 4;
+    z-index: 6;
     top: 0;
     left: 0;
 }

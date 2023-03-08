@@ -69,13 +69,7 @@ export default function Home() {
     setTextId(swiper.realIndex)
   }
 
-  useEffect(() => {
-    if ((widthSize < 1024) && (widthSize > 768)) {
-      setSwiperElements(2)
-    } else {
-      setSwiperElements(1)
-    }
-  }, [widthSize])
+
 
 
   return (
@@ -114,9 +108,8 @@ export default function Home() {
           pagination={{
             el: '.swiper-custom-pagination',
             clickable: true,
-            
           }}
-          slidesPerView={swiperElements}
+          slidesPerView={1}
           ref={swiperRef}
           spaceBetween={10}
           loop={true}
@@ -126,6 +119,7 @@ export default function Home() {
           >
           {swiperData.map((item, index) => (
           <SwiperSlide key={index}>
+            {widthSize}
           <Image 
                src={item.imgSrc}
                alt="Picture of the author"
@@ -178,7 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.middlediv}>{widthSize}</div>
+      <div className={styles.middlediv}></div>
 
       <section className={styles.sectiontwo}></section>
     </main>

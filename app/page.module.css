@@ -34,14 +34,14 @@
 }
 
 .maindivh1 {
-  line-height: 2;
+  line-height: 1;
   text-align: center;
-
+  font-size: 2.5rem;
 }
 
 .maindivh1 h3{
   color: #ffffff65;
-  
+  font-size: 2.5rem;
 }
 
 .divtwo {
@@ -82,7 +82,7 @@
 }
 /* ======== */
 .myswiperr {
-  width: 46rem
+  width: 20.5rem
 }
 .divwrapper {
   display: flex;
@@ -181,6 +181,7 @@
     cursor: pointer;
     margin-top: 1rem;
     align-items: center;
+    width:37rem;
   }
 }
 
@@ -210,9 +211,6 @@
     justify-content: center;
   }
 
-  .myswiperr {
-    width: 20.5rem;
-  }
   .main {
     display: flex;
     justify-content: center;
@@ -288,9 +286,48 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .myswiperr {
-    width: 20.5rem
+  .maindivh1 {
+    line-height: 1;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .maindivh1 h3{
+    color: #ffffff65;
+    font-size: 2rem;
+  }
+  .swiperDiv {
+    width:30rem;
+  }
+  
+}
+
+@media screen and (max-width: 564px) {
+  .maindivh1 {
+    line-height: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  .maindivh1 h3{
+    color: #ffffff65;
+    font-size: 1.5rem;
   }
 }
+
+@media screen and (max-width: 465px) {
+  .maindivh1 {
+    line-height: 1;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+  .maindivh1 h3{
+    color: #ffffff65;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
