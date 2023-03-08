@@ -6,6 +6,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 
 
@@ -13,7 +14,8 @@ export default function Home() {
   const swiperRef = useRef(null);
   const [itemKey, setItemKey] = useState('01')
   const [textId, setTextId] = useState(0)
-  const [swiperElements, setSwiperElements] = useState(0)
+  const sectionRef = useRef(null);
+
   const swiperData = [
     { 
       id: 1,
@@ -69,6 +71,10 @@ export default function Home() {
     setTextId(swiper.realIndex)
   }
 
+  const handleClick = () => {
+    sectionRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
 
 
 
@@ -107,14 +113,14 @@ export default function Home() {
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           pagination={{
             el: '.swiper-custom-pagination',
-            clickable: true,
+            clickable: true
           }}
+          
           slidesPerView={1}
           ref={swiperRef}
           spaceBetween={10}
           loop={true}
-          speed={1500}
-
+          speed={1500}          
           onSlideChange={handleSwiperItemIndex}
           >
           {swiperData.map((item, index) => (
@@ -172,9 +178,29 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.middlediv}></div>
+      <div className={styles.middlediv}>
+            <div className={styles.arrowdown}>
+              <Image
+                src="https://res.cloudinary.com/dttaprmbu/image/upload/v1678030287/arrowdown_xtrut2.svg"
+                alt="arrow-down"
+                width={50}
+                height={37}
+                className="rotate-on-hover" // add a class to trigger the rotation on hover
+                onClick={handleClick}
+              />
+              <span>Scroll Down</span>
 
-      <section className={styles.sectiontwo}></section>
+            </div>
+            <div className={styles.paginationwrapper}>
+              <div><div className="swiper-custom-pagination"></div></div>
+            </div>
+            <div className={styles.social}>
+              <div>Facebook</div>
+              <div>Twitter</div>
+              <div>Instagram</div>
+            </div>
+      </div>
+      <section className={styles.sectiontwo} ref={sectionRef}></section>
     </main>
   )
 }
