@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image'
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import RecentItems from './recentitems';
 
 
 export default function Home() {
@@ -236,6 +236,7 @@ export default function Home() {
       <section className={styles.sectionthree} ref={sectionThreeRef}>
         <div className={styles.sectionthreediv}>
           <h1>{widthSize}</h1>
+          <RecentItems />
         </div>
       </section>
     </main>
